@@ -1,0 +1,15 @@
+
+.category-folder {
+    cursor: pointer;
+  }
+  
+  .category-folder img {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 8px;
+  }
+  
+  .category-folder p{
+    margin: 0;
+    
+  }

@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 2%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 900;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin-right: 2%;
+}
+
+.navbar-links li {
+  margin-right: 1rem;
+}

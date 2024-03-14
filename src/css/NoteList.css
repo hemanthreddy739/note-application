@@ -1,0 +1,10 @@
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.NoteListWrapper {
+ padding: 7% 3%;
+  height: auto;
+}
