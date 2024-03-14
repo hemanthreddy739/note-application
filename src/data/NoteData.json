@@ -1,0 +1,86 @@
+[
+  {
+    "name": "React",
+
+    "notes": [
+      {
+        "category": "React",
+        "content": "Components are the building blocks of React applications, encapsulating reusable UI elements. They can be either functional or class-based, allowing for modular and scalable development.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656850",
+        "title": "React Components"
+      },
+
+      {
+        "category": "React",
+        "content": "State represents the data managed within a component, while props are used to pass data from parent to child components. Understanding their distinction is fundamental for managing dynamic content and component behavior.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656851",
+        "title": "State and Props"
+      },
+      {
+        "category": "React",
+        "content": "React components have lifecycle phases (e.g., mounting, updating, unmounting) where certain methods can be executed. These methods enable developers to perform actions at specific points in a component's lifecycle, such as fetching data or updating the DOM.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656852",
+        "title": "Lifecycle Methods"
+      },
+
+      {
+        "category": "React",
+        "content": "Hooks are functions that enable functional components to use state and other React features. They include useState, useEffect, useContext, and others, allowing developers to write more concise and readable code.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656853",
+        "title": "Hooks"
+      },
+      {
+        "category": "React",
+        "content": "React Router is a popular library for handling routing in React applications. It enables declarative routing by mapping URL paths to components, allowing for navigation between different views within a single-page application.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656854",
+        "title": "React Router"
+      }
+    ]
+  },
+
+  {
+    "name": "Nextjs",
+    "notes": [
+      {
+        "category": "Next.js",
+        "content": "Next.js is a popular React framework for building server-side rendered (SSR) and statically generated (SSG) web applications. It provides features like automatic code splitting, file-based routing, and API routes, offering a robust and efficient development experience.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656810",
+        "title": "Introduction to Next.js"
+      },
+      {
+        "category": "Next.js",
+        "content": "Next.js offers built-in support for server-side rendering (SSR), enabling faster initial page loads and better SEO. It allows developers to pre-render pages on the server and deliver HTML to clients, enhancing performance and user experience.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656820",
+        "title": "Server-Side Rendering (SSR) in Next.js"
+      },
+      {
+        "category": "Next.js",
+        "content": "Static Site Generation (SSG) is a key feature of Next.js, allowing developers to pre-build pages at build time and serve them as static files. This approach improves performance, scalability, and SEO, making Next.js suitable for building high-performance websites and web applications.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656830",
+        "title": "Static Site Generation (SSG) in Next.js"
+      },
+      {
+        "category": "Next.js",
+        "content": "Next.js supports hybrid rendering, combining both server-side rendering (SSR) and static site generation (SSG) in a single application. This flexibility allows developers to choose the most suitable rendering strategy for each page, optimizing performance and user experience.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "1710338656840",
+        "title": "Hybrid Rendering in Next.js"
+      },
+      {
+        "category": "Next.js",
+        "content": "Next.js simplifies data fetching with built-in methods like getStaticProps and getServerSideProps, allowing developers to fetch data at build time or request time. These methods streamline the development process and improve the performance of Next.js applications.",
+        "date": "3/13/2024, 7:34:16 PM",
+        "id": "171033837728",
+        "title": "Data Fetching in Next.js"
+      }
+    ]
+  }
+]
