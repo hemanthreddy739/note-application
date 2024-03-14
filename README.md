@@ -2,7 +2,7 @@
 this application helps in creating a note and stores the notes in different folders based on the categories, and 
 stores all the data in the local storage 
 
-Flow of the note-app Application and the features:-
+Flow of the note-application and it's features:-
 ========================================================
 user have to create an account.
 
