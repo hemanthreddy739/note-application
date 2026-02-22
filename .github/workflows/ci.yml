@@ -76,6 +76,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: |
-            ${{ secrets.ACR_LOGIN_SERVER }}/note-app:latest
+          tags: |          
             ${{ secrets.ACR_LOGIN_SERVER }}/note-app:${{ github.sha }}
