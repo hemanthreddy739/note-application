@@ -32,6 +32,32 @@ jobs:
             -Dsonar.organization=hemanthreddy739
             -Dsonar.projectKey=hemanthreddy739_note-app
 
+      - name: Wait for SonarCloud quality gate
+        if: always()
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_PROJECT: hemanthreddy739_note-app
+        run: |
+          echo "Waiting up to 5 minutes for SonarCloud quality gate..."
+          status=""
+          checks=0
+          max_checks=30
+          until [ "$status" = "OK" ] || [ "$status" = "ERROR" ] || [ $checks -ge $max_checks ]; do
+            sleep 10
+            checks=$((checks+1))
+            echo "Checking SonarCloud status (attempt $checks/$max_checks)..."
+            resp=$(curl -s -u "$SONAR_TOKEN:" "https://sonarcloud.io/api/qualitygates/project_status?projectKey=$SONAR_PROJECT")
+            status=$(echo "$resp" | python3 -c "import sys,json; j=json.load(sys.stdin); print(j.get('projectStatus',{}).get('status',''))")
+            echo "status=$status"
+          done
+          if [ "$status" = "OK" ]; then
+            echo "SonarCloud quality gate passed"
+            exit 0
+          else
+            echo "SonarCloud quality gate failed or timed out (status=$status)"
+            exit 1
+          fi
+
       - name: Azure ACR Login
         uses: azure/docker-login@v1
         with:
