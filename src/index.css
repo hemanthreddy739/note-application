@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("https://i.ibb.co/cbHkZjQ/background.jpg");
+  background-image: url("./assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "IBM Plex Mono", monospace;
