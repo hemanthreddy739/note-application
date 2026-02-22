@@ -24,11 +24,13 @@ jobs:
       - name: Run tests (CI)
         run: npm run test:ci
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+      - name: SonarCloud scan
+        uses: SonarSource/sonarqube-scan-action@v5.0.0
         with:
-          organization: ${{ secrets.SONAR_ORGANIZATION }}
-          token: ${{ secrets.SONAR_TOKEN }}
+          args: >-
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            -Dsonar.organization=hemanthreddy739
+            -Dsonar.projectKey=hemanthreddy739_note-app
 
       - name: Azure ACR Login
         uses: azure/docker-login@v1
