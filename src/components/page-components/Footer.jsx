@@ -4,7 +4,7 @@ import "../../css/Footer.css";
 function Footer() {
   return (
     <footer className="AppFooter">
-      <p> CloudMatrix's NoteApp &copy;2026 </p>
+      <p> CloudMatrix's Note@pp &copy;2026 </p>
     </footer>
   );
 }
