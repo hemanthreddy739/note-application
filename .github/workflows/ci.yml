@@ -81,7 +81,7 @@ jobs:
 
       - name: Update Helm repo with new image tag
         env:
-          NEW_TAG: ${{ github.sha }}
+          NEW_TAG: sha-${{ steps.tag-vars.outputs.short_sha }}
           HELM_REPO_TOKEN: ${{ secrets.HELM_REPO_TOKEN }}
         run: |
           git clone https://x-access-token:${HELM_REPO_TOKEN}@github.com/hemanthreddy739/my-apps-argo-type.git
